@@ -10,28 +10,38 @@ function App() {
   return (
     <div>
       <Chessboard
-        customPieces={{
-          wP: () => (
-            // <div
-            //   style={{
-            //     width: "60px",
-            //     height: "60px",
-            //     backgroundColor: "#000",
-            //     margin: "40px",
-            //     display: "flex",
-            //     alignItems: "center",
-            //   }}
-            // ></div>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
-              <img alt="chess" src={circle}></img>
-            </div>
-          ),
+        boardWidth={1200}
+        customDropSquareStyle={{
+          boxShadow: "inset 0 0 2px 6px #000",
         }}
+        customDarkSquareStyle={{
+          backgroundColor: "#999",
+        }}
+        customLightSquareStyle={{
+          backgroundColor: "#bbb",
+        }}
+        // customPieces={{
+        //   wP: () => (
+        //     // <div
+        //     //   style={{
+        //     //     width: "60px",
+        //     //     height: "60px",
+        //     //     backgroundColor: "#000",
+        //     //     margin: "40px",
+        //     //     display: "flex",
+        //     //     alignItems: "center",
+        //     //   }}
+        //     // ></div>
+        //     <div
+        //       style={{
+        //         display: "flex",
+        //         alignItems: "center",
+        //       }}
+        //     >
+        //       <img alt="chess" src={circle}></img>
+        //     </div>
+        //   ),
+        // }}
         id="BasicBoard"
       />
     </div>
