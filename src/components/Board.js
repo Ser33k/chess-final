@@ -56,11 +56,5 @@ export default function Board() {
 
   // console.log(game?.isGameOver());
   // console.log(game?.moves());
-  return (
-    <Chessboard
-      boardWidth={window.innerHeight - 10}
-      position={game?.fen()}
-      onPieceDrop={onDrop}
-    />
-  );
+  return <Chessboard position={game?.fen()} onPieceDrop={onDrop} />;
 }
